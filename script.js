@@ -1,6 +1,7 @@
 var map = document.getElementById("map-canvas");
 
 /*toggle between map and list view*/
+//reference: https://codepen.io/derekjp/pen/pPqwXJ
 $("document").ready(function () {
 	$(".tab-slider--body").hide();
 	$(".tab-slider--body:first").show();
@@ -121,6 +122,7 @@ var windowInfo = [{
 
 
 /*Map and list*/
+//reference: https://www.youtube.com/watch?v=Zxf1mnP5zcw
 function initMap() {
 
 	//style and centered map
@@ -324,6 +326,9 @@ function initMap() {
 		var markerinfo = new google.maps.Marker({
 			position: props.coords,
 			map: map,
+			icon: {
+				url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+			}
 		});
 
 		// check content
@@ -343,6 +348,7 @@ function initMap() {
 }
 
 /*Modal*/
+// reference: https://www.w3schools.com/howto/howto_css_modals.asp
 var modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
