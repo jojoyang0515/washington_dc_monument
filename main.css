@@ -1,5 +1,4 @@
 /*font-family: 'Bebas Neue', cursive;
-font-family: 'Dancing Script', cursive;
 font-family: 'Red Hat Display', sans-serif;*/
 
 html,
@@ -140,6 +139,7 @@ h1 {
 	position: relative;
 }
 
+/*introduction text*/
 #cover-text {
 	font-size: 20px;
 	color: white;
@@ -219,6 +219,7 @@ p {
 	color: #000000;
 }
 
+/*resize infowindow text*/
 #window-text {
 	margin-top: 20px;
 	font-size: 19px;
@@ -308,6 +309,7 @@ a:hover {
 	font-size: 15px;
 }
 
+/*responsive mobile devices*/
 @media only screen and (max-width: 600px) {
 	.close {
 		color: #000000;
@@ -334,5 +336,20 @@ a:hover {
 		padding: 20px;
 		border: 1px solid #345F90;
 		max-width: 100%;
+	}
+
+	h1 {
+		font-size: 70px;
+	}
+
+	#cover-text {
+		font-size: 18px;
+		line-height: 1.50;
+	}
+
+	img {
+		width: 330px;
+		overflow-x: hidden;
+		height: auto;
 	}
 }
