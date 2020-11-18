@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Memorials of Washington D.C.</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400;500&family=Red+Hat+Display:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+
+	<!--custom style-->
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	<!--navigation menu-->
+	<nav class="navbar fixed-top navbar-expand-lg">
+		<div class="navbar-nav">
+			<a class="nav-item nav-link active" href="#intro">Intro</a>
+			<a class="nav-item nav-link" href="#location">Memorials</a>
+		</div>
+	</nav>
+
+	<!--parallax and intro-->
+	<div class="parallax" id="intro"></div>
+	<div class="parallax-background">
+		<h1>Memorials in Washington D.C.</h1>
+		<p id="cover-text">Washington, D.C. is a special city in all of American's heart. It is a city filled with actions, beautiful scenes, and historical stories. Moreover, Washington D.C. is a city of commemoration with more than a dozen memorials scattered all over the city. Not only are memorials popular locations where tourists go to when visiting D.C, memorials are also where we honor great individuals and groups who have dedicated themselves to protect our country and make it the beautiful land as it is today.</p>
+	</div>
+
+	<!--map and list toggle-->
+	<div id="location">
+		<div class="tab-slider--nav">
+			<ul class="tab-slider--tabs">
+				<li class="tab-slider--trigger active" rel="tab1">Map View</li>
+				<li class="tab-slider--trigger" rel="tab2">List View</li>
+			</ul>
+		</div>
+
+		<!--map and list view-->
+		<div>
+			<div class="tab-slider--container-fluid">
+				<div id="tab1" class="tab-slider--body">
+					<div id="map-canvas"></div>
+				</div>
+				<div id="tab2" class="tab-slider--body">
+					<div id="list"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--modal-->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col-md-8">
+						<h2 id="modalname"></h2>
+						<a id="modallink" href="">Official Website</a>
+					</div>
+					<div class="col-md-4">
+						<span class="close">&#10005;</span>
+					</div>
+				</div>
+				<p id="modaldescription"></p>
+				<img id="modalimage">
+			</div>
+		</div>
+	</div>
+
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<!--map-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Cm8_aRTcS1HbGzGzBAMytV0JaU8xZqc&callback=initMap" defer></script>
+
+	<!--bootstrap-->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<!--custom js-->
+	<script src="script.js"></script>
+</body></html>

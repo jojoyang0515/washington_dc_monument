@@ -1,0 +1,300 @@
+/*font-family: 'Bebas Neue', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Red Hat Display', sans-serif;*/
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	background-color: #000000;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.66667;
+}
+
+/************ NAVIGATION ************/
+.navbar {
+	background-color: #000000;
+	height: 70px;
+}
+
+.navbar-nav {
+	margin-left: 50px;
+}
+
+/*style nav items*/
+.nav-item {
+	font-size: 15px;
+	color: #FFFFFF;
+	padding-top: 35px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.nav-item:hover {
+	font-size: 15px;
+	color: #345F90;
+}
+
+.tab-slider--nav {
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+	margin-left: 50px;
+}
+
+/*toggle button*/
+.tab-slider--tabs {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	border-radius: 35px;
+	overflow: hidden;
+	background: #000000;
+	height: 35px;
+	user-select: none;
+}
+
+.tab-slider--tabs:after {
+	content: "";
+	width: 50%;
+	background: #345F90;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 250ms ease-in-out;
+	border-radius: 35px;
+}
+
+
+.slide:after {
+	left: 50%;
+}
+
+.tab-slider--trigger {
+	font-size: 15px;
+	line-height: 1;
+	font-weight: bold;
+	color: #345F90;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 11px 20px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	transition: color 250ms ease-in-out;
+	user-select: none;
+}
+
+.tab-slider--trigger.active {
+	color: #ffffff;
+}
+
+.tab-slider--body {
+	margin-bottom: 20px;
+	width: 100%;
+	height: 100%;
+}
+
+/************ PARALLAX ************/
+.parallax-background {
+	background-color: black;
+}
+
+/*paralax image*/
+.parallax {
+	background-image: url("images/parallax.jpg");
+	opacity: 100%;
+	height: 50%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Memorial in Washington DC*/
+h1 {
+	font-family: 'Bebas Neue', cursive;
+	color: #345F90;
+	font-size: 100px;
+	letter-spacing: 2px;
+	padding-left: 50px;
+	padding-top: 40px;
+	position: relative;
+}
+
+#cover-text {
+	font-size: 20px;
+	color: white;
+	font-family: 'Red Hat Display', sans-serif;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 40px;
+	width: 100%;
+	position: relative;
+	line-height: 50px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+/************ MAP ************/
+#map-canvas {
+	width: 100%;
+	height: 1080px;
+}
+
+img {
+	max-width: 500px;
+	max-height: 320px;
+}
+
+/************ LIST ************/
+#list {
+	height: 100%;
+	background-color: #000000;
+	padding-top: 20px;
+}
+
+/*list container*/
+.listview {
+	margin-left: 20px;
+	padding-left: 30px;
+	border-radius: 35px;
+	width: 1300px;
+}
+
+/*removed list style*/
+li {
+	list-style: none;
+	padding-top: 40px;
+}
+
+/*put a line between each list item*/
+.list-item {
+	border-bottom: 2px solid #FFFFFF;
+}
+
+/*infowindow and modal title*/
+h2 {
+	color: #345F90;
+	font-size: 28px;
+	font-weight: 600;
+	font-family: 'Red Hat Display', sans-serif;
+	padding-top: 10px;
+	max-width: 400px;
+}
+
+/*list text*/
+.list-tooltip {
+	margin-top: 20px;
+	font-size: 19px;
+	font-family: 'Red Hat Display', sans-serif;
+	line-height: 1.5;
+	color: #FFFFFF;
+}
+
+/************ INFOWINDOW/MODAL CONTENT ************/
+p {
+	margin-top: 20px;
+	font-size: 19px;
+	font-family: 'Red Hat Display', sans-serif;
+	line-height: 1.5;
+	color: #000000;
+}
+
+#window-text {
+	margin-top: 20px;
+	font-size: 19px;
+	font-family: 'Red Hat Display', sans-serif;
+	line-height: 1.5;
+	color: #000000;
+	max-width: 400px;
+}
+
+/************ MODAL ************/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*modal content*/
+.modal-content {
+	background-color: #FFFFFF;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #345F90;
+	max-width: 30%;
+}
+
+#modalimage {
+	height: 400px;
+	width: auto;
+}
+
+/*close button*/
+.close {
+	color: #000000;
+	text-align: right;
+	font-size: 28px;
+	font-weight: bold;
+	padding-bottom: 15px;
+}
+
+.close:hover,
+.close:focus {
+	color: #345F90;
+	font-size: 28px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*learn more button*/
+button {
+	background-color: #345F90;
+	border: #345F90;
+	height: 30px;
+	width: 130px;
+	border-radius: 35px;
+	border-style: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+
+/*links*/
+a {
+	color: #345F90;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 15px;
+}
