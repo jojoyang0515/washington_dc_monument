@@ -375,4 +375,3 @@ function infoButton(name, img, des, link) {
 	document.getElementById("modalimage").src = img;
 	document.getElementById("modallink").href = link;
 }
-hi
