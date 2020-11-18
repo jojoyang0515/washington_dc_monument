@@ -4,7 +4,7 @@
 <head>
 	<title>Memorials of Washington D.C.</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!--bootstrap CSS-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -21,8 +21,10 @@
 	<!--navigation menu-->
 	<nav class="navbar fixed-top navbar-expand-lg">
 		<div class="navbar-nav">
-			<a class="nav-item nav-link active" href="#intro">Intro</a>
-			<a class="nav-item nav-link" href="#location">Memorials</a>
+			<ul id="nav">
+				<li><a class="nav-item nav-link active" href="#intro">Intro</a></li>
+				<li><a class="nav-item nav-link" href="#location">Memorials</a></li>
+			</ul>
 		</div>
 	</nav>
 
@@ -58,11 +60,11 @@
 		<div id="myModal" class="modal">
 			<div class="modal-content">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-7">
 						<h2 id="modalname"></h2>
 						<a id="modallink" href="">Official Website</a>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-5">
 						<span class="close">&#10005;</span>
 					</div>
 				</div>
@@ -83,4 +85,6 @@
 
 	<!--custom js-->
 	<script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
